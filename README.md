@@ -1,63 +1,29 @@
-# Challenge description 
-
-El objetivo de este desafío de codificación es brindarle la oportunidad de mostrar su conocimiento y mostrarnos cómo trabaja en un proyecto de la vida real.
-
-No lo obligamos intencionalmente a usar ninguna biblioteca en particular (que no sea React) para que no tenga que aprender algo nuevo solo para un desafío de código, pero tenga en cuenta que incluso cuando no esperamos una aplicación lista para producción, esperamos que pueda explicar por qué eligió esas dependencias/librerías para el trabajo.
-Además, tenga en cuenta no agregar funciones fuera del alcance de este desafío de código para que no termine invirtiendo más tiempo del necesario.
-
-Introducción
-Su sala de cine local tiene una gran necesidad de atraer una nueva audiencia.
-Para hacer esto, le piden que cree una aplicación web simple que permita a los usuarios descubrir nuevas películas y buscarlas.
-Dado que no tienen un servicio de back-end, la primera versión de la aplicación se creará utilizando la API pública: https://developers.themoviedb.org/3 FAQ: https://www.themoviedb.org/documentation/api
-
-Características
-El cine solicita las siguientes funciones para la primera versión
-Descubrir
-Al abrir la aplicación web, los usuarios deberían poder ver una lista de películas sugeridas por la aplicación y ordenadas por popularidad.
-
-La paginación no es necesaria para esta versión.
-- Referencia de la API: https://developers.themoviedb.org/3/discover/movie-discover
-
-Búsqueda
-En la vista de descubrimiento, agregue una barra de búsqueda en la parte superior para permitir a los usuarios consultar información sobre películas.
-Si el campo de búsqueda está vacío, muestra los resultados del descubrimiento
-- Referencia de la API: https://developers.themoviedb.org/3/search/search-movies
-
-Filtrar por clasificación
-La calificación es un valor entre 0 y 10.
-Agrega un filtro de clasificación en forma de cinco estrellas como https://dribbble.com/shots/1053518-Filters.
-Al seleccionar una estrella, también deben seleccionarse todas las estrellas de la izquierda.
-El rango de cada estrella es 2, por lo que, si se selecciona la primera estrella, sólo deberían aparecer películas con calificación 0-2. Si se selecciona la segunda estrella, sólo deberían aparecer películas con una calificación de 2 a 4, y así sucesivamente.
-
-Si la estrella en la que se hizo clic es la actualmente activa, deshabilite el filtro.
-
-Haga este filtrado en el lado del cliente.
-- Campo de calificación en el modelo de película: `vote_average`
-
-Vista de detalles
-Al hacer clic, se debe mostrar una vista detallada, mostrando más información sobre la película.
-
-Diseño
-No requerimos diseños asombrosos.
-Una interfaz de usuario limpia y mínima servirá.
-Queremos ver las imágenes de películas proporcionadas por la API.
-https://dribbble.com/shots/1682568-Flixus-Homepage-WIP/attachments/266476 una sugerencia de diseño, pero tú decides.
-
-Requisitos de desarrollo
-Usa `create-react-app` para este proyecto
-Usar la última versión de React
-Proporcionar todos los pasos necesarios para iniciar la aplicación
-Entregables
-El código base del proyecto se entregó de alguna manera (usted elige, preferentemente en github.com).
-Cualquier otra cosa que consideres importante para entender la aplicación.
-PREGUNTAS MÁS FRECUENTES
-- ¿Necesito agregar pruebas?
-  - No.
-- ¿Necesito usar alguna dependencia específica?
-  - Aparte de `React`, usa lo que te resulte cómodo y lo que creas que es necesario para este proyecto
-- ¿Qué tipo de funciones de React puedo usar?
-  - No hay restricciones aquí, muéstranos lo que sabes. Nos encanta React y nos encanta usar las funciones más recientes.
-- ¿Tengo que seguir los diseños?
-  - No, siéntase libre de crear la interfaz de usuario como desee. Solo nos importa el código.
-
-
+<h1>Movies App</h1>
+<hr><p>A web application that allows users to find a specific movie or search by rating.</p><h2>Technologies Used</h2>
+<hr><ul>
+<li>HTML</li>
+</ul><ul>
+<li>CSS</li>
+</ul><ul>
+<li>JavaScript</li>
+</ul><ul>
+<li>React</li>
+</ul><ul>
+<li>Bootstrap</li>
+</ul><ul>
+<li>React-Router-Dom</li>
+</ul><h2>Screenshots</h2>
+<hr><p><img src="https://i.postimg.cc/LXfbMp1c/Screen-Shot-2022-07-07-at-6-28-26-PM.png" alt=""></p><p><img src="https://i.postimg.cc/Ls0ps2hh/Screen-Shot-2022-07-07-at-6-26-50-PM.png" alt=""></p><h2>Setup</h2>
+<hr><p>Clone down this repository. You will need node and npm installed globally on your machine.
+I used a public API from https://www.themoviedb.org/</p><h5>Steps</h5><ul>
+<li>Installation:  npm install</li>
+</ul><ul>
+<li>To Run Test Suite:  npm test</li>
+</ul><ul>
+<li>To Start Server:  npm start</li>
+</ul><ul>
+<li>To Visit App:  localhost:3000</li>
+</ul><h2>Usage</h2>
+<hr><p>Users can filter movies by title or rating. They can also see more information about the movies by clicking on each card.</p><h2>Project Status</h2>
+<hr><p>This project is already completed. Anyways, I'm still working on building more functionalities and features.</p><h2>Contact</h2>
+<hr><p><span style="margin-right: 30px;"></span><a href="https://www.linkedin.com/in/noeliacaseres/"><img target="_blank" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" style="width: 10%;"></a></p>

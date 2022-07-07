@@ -1,0 +1,50 @@
+h6{
+  font-weight: bold;
+}
+
+.moviepage-img{
+  width: 266px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.movie-details{
+  margin-left: 48px;
+}
+
+@media (max-width:768px) {
+ .content-box{
+  flex-direction: column;
+  align-items: center;
+  
+ }
+
+ .movie-details{
+  width: 100%;
+  margin: 48px 0 0 0;
+  
+ }
+  
+}
+
+
+
+@keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .loading-spinner {
+    width: 100px;
+    height: 100px;
+    border: 10px solid #f3f3f3; /* Light grey */
+    border-top: 10px solid #383636; /* Black */
+    border-radius: 50%;
+    animation: spinner 1.5s linear infinite;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+  }

@@ -1,22 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../CSS/App.css';
 
-export const MovieCard = ({
-        adult,
-        backdrop_path,
-        genre_ids,
+export const MovieCard = ({ 
         id,
-        original_language,
-        original_title, 
-        overview,
-        popularity,
         poster_path, 
-        release_date, 
         title,
-        video, 
         vote_average,
-        vote_count,
-        
+        overview
 }) => {
 
 
@@ -24,22 +15,24 @@ const IMG_URL= `https://image.tmdb.org/t/p/w500${poster_path}`
     
   return (
     <div className='col'>
-        <div className='card card-container'>
-            <div className='row no-gutters'>
-                <div className='col-4' >
-                    <img src={IMG_URL} alt={title} className="card-img-container card-img rounded img-thumbnail p-1 "/>
-                </div>
-                <div className='card-body col-6 p-0'>
-                    <h5 className='card-title'>{title}</h5>
-                    <small className='text-muted'>{vote_average}</small>     
-                    <p className='text-truncate'>{overview}</p>               
-                    <Link to={`/${id}`}>
-                        More information...
-                    </Link>
+        <Link to={`/${id}`} className="text-decoration-none text-dark" >
+            <div className='text-bg-light rounded-2'>
+                <div className='d-flex p-3 '>
+                    <div className='img-container' >
+                        <img src={IMG_URL} alt={title} className="card-img rounded-1"/>
+                    </div>
+                    <div className='d-flex flex-column ms-3'>
+                        <h5 className=''>{title}</h5>
+                        <div className=''>
+                            <p className='overview'>{overview}</p> 
+                            <span className="fa fa-star gold"></span>
+                            <span className='text-muted'>{vote_average}</span>     
+                        </div>
+                        {/* <p className='small m-0 pb-0 details-text'>Click to view details</p>                      */}
+                    </div>
                 </div>
             </div>
-        </div>
-
+        </Link>
     </div>
   )
 }

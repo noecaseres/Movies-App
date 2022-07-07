@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+li,ul{
+  list-style: none;
+}
+
+input:hover{
+  cursor: pointer;
+}
+
+
+body{
+  background: linear-gradient(to top, #2C5364, #203A43, #0F2027);
+  font-family: 'Source Sans Pro', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Layout */
+
+.Layout_container{
+  width: 100%;
+  min-height: 100vh;
+  }
+
+h1{
+  font-weight: 700;
+}
+
+.popcorn-icon{
+  height: 48px;
+}
+
+/* MovieCard */
+
+.card-img{
+  width: 133px;
+  height: 200px;
+  object-fit: cover;
+  
+}
+
+
+.overview{
+  height: 50px;
+  overflow: hidden;
+  text-decoration: none;
+  margin:0;
+  font-size: 16px;
+}
+
+
+
+
+
