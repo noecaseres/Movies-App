@@ -12,6 +12,9 @@
 <li>Bootstrap</li>
 </ul><ul>
 <li>React-Router-Dom</li>
+</ul><h2>Features</h2>
+<hr><ul>
+<li>Responsive web design</li>
 </ul><h2>Screenshots</h2>
 <hr><p><img src="https://i.postimg.cc/LXfbMp1c/Screen-Shot-2022-07-07-at-6-28-26-PM.png" alt=""></p><p><img src="https://i.postimg.cc/Ls0ps2hh/Screen-Shot-2022-07-07-at-6-26-50-PM.png" alt=""></p><h2>Setup</h2>
 <hr><p>Clone down this repository. You will need node and npm installed globally on your machine.
